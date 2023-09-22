@@ -1,7 +1,7 @@
 body {
-background-color: #b8bac8ff;
-font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif;
+    background-color: #b8bac8ff;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .container {
@@ -12,14 +12,15 @@ font-family: 'Merriweather', serif;
 .buttons {
     display: flex;
     flex-direction: row;
-   justify-content: end;
-   
+    justify-content: end;
 }
 
+
 button {
-    background-color: #c1ef9fff;
+    background-color: #b8bac8ff;
     border-radius: 5px;
-    border: 1px;
+    border-style: solid;
+    border-width: 2px;
     border-color: #c1ef9fff;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -28,8 +29,12 @@ button {
     color: #595959;
 }
 
-    
-    
+button:hover {
+    background-color: #c1ef9fff;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+}
 
 .gallery {
 display: flex;
@@ -43,16 +48,24 @@ img {
 height: 450px;
 }
 
+img:hover {
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
 
-h3{
+h3 {
 font-family: 'Inter', sans-serif;
 font-size: 30px;
 color: #595959;
 }
 
-h4{
+h4 {
 font-family: 'Inter', sans-serif;
 font-size: 22px;
 color: #46970b;
 }
 
+h4:hover {
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
