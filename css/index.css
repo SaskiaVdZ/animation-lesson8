@@ -69,3 +69,34 @@ h4:hover {
     animation: headShake; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
 }
+
+h1 {
+    font-family: 'Merriweather', serif;
+    color: #c1ef9fff;
+    font-size: 80px;
+    margin: 50px;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .textAnimation {
+    height: 500px;
+    background-color: #b8bac8ff;
+  }
